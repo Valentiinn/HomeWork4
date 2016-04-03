@@ -167,16 +167,14 @@ public class Main {
 
 	public static void convertToBinary() {
 		System.out.println("***Task 9***");
-		int number = 124;
-		int result;
-		System.out.println("Decimal number: " + number);
-		System.out.print("Binary number: ");
+		int result, number = 124;
+		String temp = "";
 		while (number != 0) {
 			result = number % 2;
-			System.out.print(result);
+			temp = result + temp;
 			number = number / 2;
-
 		}
+		System.out.print(temp);
 	}
 
 	public static void printArray(int[] arr) {
